@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Ashutosh Mahapatra
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[sc,osf]{mathpazo}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\vspace{-10pt}\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\footskip}{5pt}
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Ashutosh Mahapatra} \\ \vspace{5pt}
+  \small +91 923-893-3355 $|$ \href{mailto:ashutoshmahapatra.13014@gmail.com}{\underline{ashutoshmahapatra.13014@gmail.com}} $|$
+  \href{https://linkedin.com/in/ashutosh-mahapatra29/}{\underline{LinkedIn}} $|$
+  \href{https://github.com/AM-ash-OR-AM-I}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Siksha 'O' Anusandhan University (ITER)}{Nov 2021 -- June 2025}
+{Bachelor of Technology in Computer Science Engineering}{ CGPA: 9.8 }
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Software Development Intern}{Sep. 2022 -- Present}
+{\href{https://avetilearning.com/}{Aveti Learning Pvt. Ltd.}}{Bhubaneswar, India}
+% {Software Engineering Intern}{Sep. 2022 -- Present}
+% {\href{https://avetilearning.com/}{Aveti Learning Pvt. Ltd.}}{Bhubaneswar, India}
+\resumeItemListStart
+\resumeItem{ Developed a cross-platform AI tutor bot mobile and web application using Flutter, ensuring responsiveness.}
+\resumeItem{ Utilized LLMs, GPT-4 through Langchain as a backend service to enhance chatbot functionality.}
+% \resumeItem{ Utilized GenAI models like GPT-4 through Langchain as a backend service to enhance chatbot functionality.}
+\resumeItem{ Implemented Q\&A feature using OpenAI embeddings and vector database.}
+\resumeItem{ Orchestrated RESTful APIs hosted on AWS EC2 with FastAPI and employed NGINX for scalable web app.}
+% \resumeItem{ Deployed and managed Python Flask server on Linux environment in VM}
+\resumeItem{Engineered a modular content creation software solution within a 2-month timeframe, leveraging Docker on AWS Lambda and DynamoDB for translating and converting PowerPoint slides to videos.}
+% \resumeItem{Reduced memory consumption and cpu usage by 70\%, by analyzing system resource utilization}
+\resumeItem{Optimized the deployment processes and achieved a 50\% time reduction via automation with Github Actions.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{App Development Lead}{Sep. 2023 -- Present}
+{Google Developer Student Club, ITER} {Bhubaneswar, India}
+\resumeItemListStart
+\resumeItem { Development of cross-platform apps using Flutter and Google cloud platform}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/AM-ash-OR-AM-I/Passlock}{\underline{Passlock}} \& \href{https://github.com/AM-ash-OR-AM-I/PasslockDesktop}{\underline{PasslockDesktop}}} $|$ \emph{Python, Firebase, Kivy, PyInstaller, Github Actions}}{Jan. 2022 -- June 2022}
+\resumeItemListStart
+\resumeItem{Created a cross-platform password manager for mobile and desktop (Android, Linux, Windows) }
+\resumeItem{Leveraged Firebase real-time database for efficient CRUD operations.}
+\resumeItem{Implemented AES-256 encryption to ensure robust password security and decryption.}
+\resumeItem{Achieved real-time password synchronization across devices with 0ms latency}
+\resumeItem{ Optimized app load time by 30\% implementing lazy loading technique}
+% \resumeItem{ Adhered to Material Design guidelines for app development.}
+\resumeItemListEnd
+% \resumeProjectHeading
+%     {\textbf{\href{https://github.com/AM-ash-OR-AM-I/AD-Programs}{\underline{Algorithm Analysis}}} $|$ \emph{ Data Structures and Algorithms (DSA) , Python, Java}}{March 2023 -- July 2023}
+%     \resumeItemListStart
+%       \resumeItem{ Utilized randomized quick sort to reduce time taken to sort array of 1k elements, by 40 times from 0.08s to 0.002s}
+%       \resumeItem{ Analyzed and benchmarked various algorithmic techniques for practical comparison}
+%       \resumeItem{Practical comparision of Karatsuba's Fast multiplication}
+% \resumeItemListEnd
+% \resumeProjectHeading
+%   {\textbf{\href{https://github.com/AM-ash-OR-AM-I/Find_MyStuff}{\underline{Find MyStuff}}} $|$ \emph{ Python, Kivy, Github Actions, Git}}{Sep 2021 -- Jan 2022}
+%   \resumeItemListStart
+%     \resumeItem{Employed Google Speech-To-Text for voice detection}
+%     \resumeItem{Successfully reduced app load time by 50\% by dynamically analyzing previous load time history.}
+%     \resumeItem{Automated app build process with Github Actions}
+%   \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/AM-ash-OR-AM-I/jaldristi}{\underline{JalDristi (Smart India Hackathon)}}} $|$ \emph{ Flutter, Python, FastAPI, MySQL }}{Sep. 2023 }
+\resumeItemListStart
+\resumeItem{Spearheaded a team of 6 during a 24-hour hackathon, developing a crowdsourced water-monitoring system}
+\resumeItem{Utilized Flutter and employed the Provider package for state management to craft a Neumorphic and Stateful UI}
+\resumeItemListEnd
+
+\resumeItemListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\vspace{-10px}
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}{: Python, Java, C, Dart, HTML, CSS, Assembly} \\
+        % \textbf{Frameworks}{: Flutter, Flask, FastAPI, Kivy, KivyMD, TesseractOCR, PyInstaller, NumPy} \\
+        \textbf{Frameworks}{: Flutter, Flask, FastAPI, Kivy, Langchain, KivyMD, PyInstaller, NumPy} \\
+        \textbf{Tools and OS}{: Linux, UNIX shell, Bash, Git, SSH, Docker, Github Actions, Markdown} \\
+        % \textbf{Tools and OS}{: Linux, UNIX shell, Bash, Git, SSH, Docker, Cisco Packet Tracer, Nmap, Wireshark} \\
+        \textbf{Cloud Platform}{: Google Cloud Platform, Amazon Web Services} \\
+        \textbf{Databases: }{MySQL, PostgreSQL, Oracle DB} \\
+        }}
+
+\end{itemize}
+
+
+%
+% %-----------Problem Solving SKILLS-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        Rated 1593 in \href{https://www.codechef.com/users/ashu2909}
+        {\underline{Codechef}} \\
+        {Rated 1570 in \href{https://leetcode.com/ashu_coder/}{\underline{Leetcode}}} \\
+        Rated 1232 Pupil in \href{https://codeforces.com/profile/ashucoder}
+        {\underline{Codeforces}} \\
+        Secured \textbf{4th} rank in Capture The Flag contest conducted by NIT Rourlkela \\
+        }}
+
+\end{itemize}
+% %-------------------------------------------
+\end{document}
