@@ -1,6 +1,6 @@
 *
-!*.tex
-!*.pdf
+!public_resume.tex
+!public_resume.pdf
 !.gitignore
 !*.md
 !*.html
